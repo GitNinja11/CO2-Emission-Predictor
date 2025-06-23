@@ -12,7 +12,7 @@ st.title("🚗 CO₂ Emission Predictor")
 st.markdown("Predict CO₂ emissions (g/km) based on vehicle specifications.")
 
 # --- User Input Fields ---
-engine_size = st.number_input("Engine Size (L)", min_value=0.0, format="%.1f")
+engine_size = st.number_input("EngineSize (L)", min_value=0.0, format="%.1f")
 cylinders = st.number_input("Cylinders", min_value=2, step=1)
 transmission = st.selectbox("Transmission", ["Automatic", "Manual"])
 fuel_type = st.selectbox("Fuel Type", ["Z", "D", "X", "E", "N"])  # Replace with real codes from dataset
@@ -24,7 +24,7 @@ fuel_mpg = st.number_input("Fuel Consumption Comb (mpg)", min_value=0.0, format=
 # --- Make Prediction ---
 if st.button("Predict CO₂ Emissions"):
     input_data = pd.DataFrame([{
-        "Engine Size(L)": engine_size,
+        "EngineSize(L)": engine_size,
         "Cylinders": cylinders,
         "Transmission": transmission,
         "Fuel Type": fuel_type,
