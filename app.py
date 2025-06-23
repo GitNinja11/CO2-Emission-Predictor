@@ -1,10 +1,10 @@
 # app.py
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 # Load the trained pipeline (preprocessor + model)
-model = joblib.load("model.pkl")
+model = pickle.load("model.pkl")
 
 # App title
 st.set_page_config(page_title="CO₂ Emission Predictor", layout="centered")
