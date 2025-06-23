@@ -73,21 +73,3 @@ For questions or collaborations:
 
 
 
-## Installation
-
-Install my-project with npm
-
-```bash
-npm install my-project
-cd my-project
-```
-
-## Usage/Examples
-
-```javascript
-import Component from 'my-project'
-
-function App() {
-  return <Component />
-}
-```
